@@ -29,14 +29,4 @@ app.post('/login', (req, res) => {
 app.listen(3000, () => console.log('Server running on port 3000'));
 
 
-/**
- * {
-  "username": "' OR 1=1 --",
-  "password": "irrelevant"
-}
- * 
- * SELECT * FROM users WHERE username = '' OR 1=1 --' AND password = 'irrelevant'
- * 
- * 
- * This query always returns true, potentially granting unauthorized access
- */
+// SELECT * FROM users WHERE username = '\' 
