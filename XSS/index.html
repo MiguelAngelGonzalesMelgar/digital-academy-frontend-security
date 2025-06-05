@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wellcome to my vulnerable page</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <div>
+    <h1>Please leave a comment</h1>
+    <form id="commentForm"> <input type="text"
+      id="userName"        placeholder="Your Name"
+      required
+      >
+      <textarea id="userComment"
+        placeholder="Your comment here..."
+        required
+      ></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <div id="commentsSection">
+      <h2>Comments</h2>
+      <ul id="commentsList">
+        </ul>
+      <button type="button"
+        id="clearCommentsButton"
+      >
+      Delete comments
+    </button>
+    </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
